@@ -271,7 +271,7 @@ dmesg | tail -3
 ### Task 1: Multi-container supervision
 
 Shows two containers (`alpha` and `beta`) running simultaneously under a single supervisor process.
-![Screenshot1](images/Screenshot 1.png)
+![Screenshot1](images/s1.png)
 
 ---
 
