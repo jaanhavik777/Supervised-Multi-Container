@@ -272,48 +272,63 @@ dmesg | tail -3
 
 Shows two containers (`alpha` and `beta`) running simultaneously under a single supervisor process.
 ![Screenshot1](images/s1.png)
+![Screenshot2](images/s2.png)
 
 ---
 
 ### Task 2: Metadata tracking (`ps`)
 
 Displays container metadata including ID, PID, state, memory limits, and start time using the `engine ps` command.
+![Screenshot3](images/s3.png)
 
 ---
 
 ### Task 3: Bounded-buffer logging
 
 Shows output from `cpu_hog` captured in `logs/alpha.log`. Demonstrates the logging pipeline using producer-consumer threads.
+![Screenshot4](images/s4.png)
+![Screenshot5](images/s5.png)
 
 ---
 
 ### Task 4: CLI and IPC
 
 Shows a CLI command (e.g., `engine start` or `engine logs`) communicating with the supervisor via the control IPC mechanism.
+![Screenshot6](images/s6.png)
+![Screenshot7](images/s7.png)
 
 ---
 
 ### Task 5: Soft-limit warning
 
 Shows kernel log (`dmesg`) output when a container exceeds its soft memory limit. The process continues execution after the warning.
+![Screenshot8](images/s8.png)
 
 ---
 
 ### Task 6: Hard-limit enforcement
 
 Shows kernel log (`dmesg`) where a container is killed after exceeding the hard memory limit, along with updated state in `engine ps`.
+![Screenshot9](images/s9.png)
+![Screenshot10](images/s10.png)
+![Screenshot11](images/s11.png)
 
 ---
 
 ### Task 7: Scheduling experiment
 
 Shows two containers running CPU-bound workloads with different `nice` values, demonstrating difference in execution time or CPU share.
+![Screenshot12](images/s12.png)
+![Screenshot13](images/s13.png)
 
 ---
 
 ### Task 8: Clean teardown
 
 Shows that all containers are stopped, no zombie processes exist (`ps aux`), and system resources are properly cleaned up.
+![Screenshot14](images/s14.png)
+![Screenshot15](images/s15.png)
+![Screenshot16](images/s16.png)
 
 ---
 
